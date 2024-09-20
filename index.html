@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Nutxer</title>
+    <link rel="stylesheet" href="/css/plugin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="font-[Poppins]">
+    <header class="relative">
+        <div class="container mb-5 mt-2 mx-auto w-11/12 sm:w-5/6 sm:mt-5 sm:mb-7 flex justify-between">
+            <div class="mt-4">
+                <a class="flex items-center" href="/"><img src="img/logo.png" alt=""><span class="font-bold text-2xl ml-2">Nutxer</span></a>
+            </div>
+            <div class="">
+                <nav>
+                    <button id="mobile_icon" class="text-black flex text-end text-2xl sm:hidden mt-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>                                                  
+                    </button>
+                    <ul id="main_manu" class="hidden space-x-6 mt-8 absolute sm:relative w-full sm:top-0 sm:justify-evenly sm:flex text-center left-0">
+                        <li>
+                            <a href="/" class="font-semibold text-base" id="active_nav">Home</a>
+                        </li>
+                        <li>
+                            <a href="/services" class=" font-semibold text-base">Services</a>
+                        </li>
+                        <li>
+                            <a href="/about" class=" font-semibold text-base">About</a>
+                        </li>
+                        <li>
+                            <a href="/pricing" class=" font-semibold text-base">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="/blog" class=" font-semibold text-base">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/" class="font-semibold text-base">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mt-2 hidden sm:block">
+                <button class="bg-orange1 rounded-lg sm:px-14 sm:py-5 sm:text-xl text-white sm:font-medium">
+                    <a href="#">Sign Up</a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section >
+        <div style="background-image: url('img/bg01.png');" class="bg-no-repeat bg-center bg-cover sm:hidden block">
+            <div class="container mx-auto w-11/12 sm:w-5/6 sm:mt-5 py-5">
+                <div class="grid grid-cols-7 sm:grid-cols-5">
+                    <div class="col-span-5 sm:col-span-3">
+                        <div >
+                            <button class="bg-orange1 text-[10px] sm:text-[14px] rounded-lg text-white px-2 sm:mt-10"><a href="">Change Your Eating Patterns in a Few Steps</a></button>
+                        </div>
+                        <p class="text-white sm:text-7xl text-4xl font-semibold mb-3 sm:my-8 sm:leading-snug">Change Your Eating Patterns in a Few Steps</p>
+                        <p class="text-white text-xs sm:text-[20px] sm:leading-7 mb-8">No matter what your goals are, we've got the science-backed support, tools, and guides to help you meet them.</p>
+                
+                        <div class="mt-4 mb-6">
+                            <button class="bg-orange1 rounded-lg px-8 py-4 sm:text-xl text-white sm:font-medium">
+                                <a href="#">Get Started</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-span-2 sm:col-span-2">
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <div style="background-image: url('img/bg_img_01.png');" class="bg-no-repeat bg-center w-full sm:block hidden">
+            <div class="container mx-auto w-11/12 sm:w-5/6 sm:mt-5 py-5 ">
+                <div class="grid grid-cols-7 sm:grid-cols-5">
+                    <div class="col-span-5 sm:col-span-3">
+                        <div >
+                            <button class="bg-orange1 text-[10px] sm:text-[14px] rounded-lg text-white px-2 sm:mt-10"><a href="">Change Your Eating Patterns in a Few Steps</a></button>
+                        </div>
+                        <p class="text-white sm:text-7xl text-4xl font-semibold mb-3 sm:my-8 sm:leading-snug">Change Your Eating Patterns in a Few Steps</p>
+                        <p class="text-white text-xs sm:text-[20px] sm:leading-7 mb-8">No matter what your goals are, we've got the science-backed support, tools, and guides to help you meet them.</p>
+                
+                        <div class="mt-4 mb-6">
+                            <button class="bg-orange1 rounded-lg px-8 py-4 sm:text-xl text-white sm:font-medium">
+                                <a href="#">Get Started</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-span-2 sm:col-span-2">
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+   
+    </section>
+
+    <section class="bg-[#01393F]">
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-5 sm:grid sm:grid-cols-6">
+            <div class="text-center sm:mt-10 sm:col-span-2">
+                <p class="text-white text-xl my-3">Healthy Eating</p>
+                <p class="text-white text-[16px]">Physical activity plays a vital and <br> essential role in maintaining.</p>
+                <div class="mt-6 mb-6">
+                    <button class="bg-orange1 rounded-lg px-8 py-4 text-xs sm:text-xl text-white sm:font-medium">
+                        <a href="#">See Details</a>
+                    </button>
+                </div>
+            </div>
+            <div class="text-center mt-10 sm:col-span-2">
+                <p class="text-white text-xl my-3">Nutritious Eating</p>
+                <p class="text-white text-[16px]">During pregnancy you need folic acid, <br> iron, calcium, vitamin D, choline.</p>
+                <div class="mt-6 mb-6">
+                    <button class="bg-orange1 rounded-lg px-8 py-4 text-xs sm:text-xl text-white sm:font-medium">
+                        <a href="#">See Details</a>
+                    </button>
+                </div>
+            </div>
+            <div class="text-center mt-10 sm:col-span-2">
+                <p class="text-white text-xl my-3">Sports Nutrition</p>
+                <p class="text-white text-[16px]">Sports nutrition is the study and <br> implementation of a diet.</p>
+                <div class="mt-6 mb-6">
+                    <button class="bg-orange1 rounded-lg px-8 py-4 text-xs sm:text-xl text-white sm:font-medium">
+                        <a href="#">See Details</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-5">
+              <div class="sm:my-10 ">
+                <p class="text-3xl text-center sm:text-6xl font-semibold">Find Nearest Dietetics</p>
+                <p class="text-xs sm:mt-5 sm:text-[18px] mt-3 text-center">Physical activity plays a vital and essential role in maintaining.</p>
+              </div>
+             <div class="sm:flex sm:justify-between">
+                <div class="flex items-center justify-center my-5">
+                    <div>
+                        <div class="bg-white border   border-gray-200 rounded-lg shadow max-w-[273px]">
+                            <a href="#">
+                                <img class="rounded-t-lg" src="/img/Bucked Up Woke AF 03.png" alt="" />
+                            </a>
+                            <div class="p-2">
+                                <a href="#">
+                                    <h5 class="mb-2 text-[22px] font-semibold">Bucked Up Woke AF</h5>
+                                </a>
+                                <select class="block w-full p-2 mb-3 text-sm border border-orange-500 rounded-full text-gray1">
+                                    <option selected>200 gram</option>
+                                    <option value="US">300 gram</option>
+                                    <option value="CA">400 gram</option>
+                                    <option value="FR">500 gram</option>
+                                  </select>
+                                  <div class="flex">
+                                    <p class="mb-3 text-[22px] font-semibold">35.00</p>
+                                    <p class="text-[14px] mt-3 ml-1 text-gray1">USD</p>
+                                  </div>
+                                
+                                <div class=" mb-1">
+                                    <button class="bg-orange1 rounded-full w-full py-3 text-[14px] sm:text-xl text-white sm:font-medium">
+                                        <a href="#">Add to Cart</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                  </div> 
+                  <div class="flex items-center justify-center ">
+                    <div>
+                        <div class="bg-white border   border-gray-200 rounded-lg shadow max-w-[273px]">
+                            <a href="#">
+                                <img class="rounded-t-lg" src="/img/body dynamic 02.png" alt="" />
+                            </a>
+                            <div class="p-2">
+                                <a href="#">
+                                    <h5 class="mb-2 text-[22px] font-semibold">Body Dynamix Bar</h5>
+                                </a>
+                                <select class="block w-full p-2 mb-3 text-sm border border-orange-500 rounded-full text-gray1">
+                                    <option selected>200 gram</option>
+                                    <option value="US">300 gram</option>
+                                    <option value="CA">400 gram</option>
+                                    <option value="FR">500 gram</option>
+                                  </select>
+                                  <div class="flex">
+                                    <p class="mb-3 text-[22px] font-semibold">35.00</p>
+                                    <p class="text-[14px] mt-3 ml-1 text-gray1">USD</p>
+                                  </div>
+                                
+                                <div class=" mb-1">
+                                    <button class="bg-orange1 rounded-full w-full py-3 text-[14px] sm:text-xl text-white sm:font-medium">
+                                        <a href="#">Add to Cart</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                  </div> 
+                  <div class="flex items-center justify-center mt-5 sm:mt-0">
+                    <div>
+                        <div class="bg-white border   border-gray-200 rounded-lg shadow max-w-[273px]">
+                            <a href="#">
+                                <img class="rounded-t-lg" src="/img/card01 _p1.png" alt="" />
+                            </a>
+                            <div class="p-2">
+                                <a href="#">
+                                    <h5 class="mb-2 text-[22px] font-semibold">Baked Chicken</h5>
+                                </a>
+                                <select class="block w-full p-2 mb-3 text-sm border border-orange-500 rounded-full text-gray1">
+                                    <option selected>200 gram</option>
+                                    <option value="US">300 gram</option>
+                                    <option value="CA">400 gram</option>
+                                    <option value="FR">500 gram</option>
+                                  </select>
+                                  <div class="flex">
+                                    <p class="mb-3 text-[22px] font-semibold">35.00</p>
+                                    <p class="text-[14px] mt-3 ml-1 text-gray1">USD</p>
+                                  </div>
+                                
+                                <div class=" mb-1">
+                                    <button class="bg-orange1 rounded-full w-full py-3 text-[14px] sm:text-xl text-white sm:font-medium">
+                                        <a href="#">Add to Cart</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                  </div>
+                  <div class="hidden sm:block mt-5">
+                    <div class="flex items-center justify-center mt-5 sm:mt-0">
+                        <div>
+                            <div class="bg-white border   border-gray-200 rounded-lg shadow max-w-[273px]">
+                                <a href="#">
+                                    <img class="rounded-t-lg" src="/img/card01 _p1.png" alt="" />
+                                </a>
+                                <div class="p-2">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-[22px] font-semibold">Baked Chicken</h5>
+                                    </a>
+                                    <select class="block w-full p-2 mb-3 text-sm border border-orange-500 rounded-full text-gray1">
+                                        <option selected>200 gram</option>
+                                        <option value="US">300 gram</option>
+                                        <option value="CA">400 gram</option>
+                                        <option value="FR">500 gram</option>
+                                      </select>
+                                      <div class="flex">
+                                        <p class="mb-3 text-[22px] font-semibold">35.00</p>
+                                        <p class="text-[14px] mt-3 ml-1 text-gray1">USD</p>
+                                      </div>
+                                    
+                                    <div class=" mb-1">
+                                        <button class="bg-orange1 rounded-full w-full py-3 text-[14px] sm:text-xl text-white sm:font-medium">
+                                            <a href="#">Add to Cart</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                      </div>
+                  </div>
+             </div> 
+             
+              <div class="flex items-center justify-center mt-10 mb-6">
+                <button class="bg-orange1 rounded-lg px-8 py-4 text-[15px] sm:text-xl text-white sm:font-medium">
+                    <a href="#">See More</a>
+                </button>
+            </div>
+             
+            
+        </div>
+    </section>
+
+    <section style="background-image: url('img/Best_healthy.png');" class="bg-no-repeat bg-cover bg-center">
+        
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-5">
+            <a href="" class="flex justify-center my-5"><img src="/img/Play.png" alt="" class="w-[60px]"></a>
+            <p class="sm:text-6xl tracking-wide leading-[50px] p-4 text-3xl text-center font-semibold text-white ">Best Healthy Foods to Gain Weight Fast</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-12">
+            <div class="sm:grid sm:grid-cols-2">
+                <div class="sm:col-span-1">
+                    <img src="/img/weight_loss.png" alt="">
+                </div>
+                <div class="sm:col-span-1 sm:ml-10">
+                    <p class="text-3xl sm:text-5xl font-semibold my-5 leading-[50px]">Weight Loss and <br> Maintenance</p>
+                    <p class="text-xs sm:text-xl text-gray1 leading-5">Physical activity plays a vital and essential role in maintaining. Our curriculum is based in cutting edge psychology, brain science, nutrition, intuitive.</p>
+                    <div class="mt-8 mb-6">
+                        <button class="bg-orange1 rounded-lg px-8 py-4 sm:text-xl text-white sm:font-medium">
+                            <a href="#">Get Started</a>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </section>
+
+    
+    <section class="bg-[#01393F] pt-5">
+        <!--HTML CODE-->
+     <div class="w-full relative">
+       <div class="swiper default-carousel swiper-container ">
+       <div class="swiper-wrapper ml-16 sm:ml-0">
+        <div class="swiper-slide mb-5 sm:flex sm:justify-center">
+          <div class="bg-white rounded-2xl w-[335px] h-[170px] p-5 py-5 ">
+           <div class="contents">
+               <p class="text-xs pb-4 ">"Thanks to [Your Program Name], I've transformed my life. I lost 30 pounds, gained energy, and improved my overall well being. I can't recommend this program enough!"</p>
+               <div class="flex">
+                   <img src="/img/Hussain.png" alt="" class="mb-10">
+                   <div>
+                       <p class="text-[11px] font-medium">Hussain Ahmed</p>
+                       <p class="text-[10px] text-gray1">Physician developer</p>
+                   </div>
+               </div>
+           </div>
+          </div>
+        </div>
+        <div class="swiper-slide mb-5 sm:flex sm:justify-center">
+            <div class="bg-white rounded-2xl w-[335px] h-[170px] p-5 py-5 ">
+             <div class="contents">
+                 <p class="text-xs pb-4 ">"Thanks to [Your Program Name], I've transformed my life. I lost 30 pounds, gained energy, and improved my overall well being. I can't recommend this program enough!"</p>
+                 <div class="flex">
+                     <img src="/img/Hussain.png" alt="" class="mb-10">
+                     <div>
+                         <p class="text-[11px] font-medium">Hussain Ahmed</p>
+                         <p class="text-[10px] text-gray1">Physician developer</p>
+                     </div>
+                 </div>
+             </div>
+            </div>
+          </div>
+          <div class="swiper-slide mb-5 sm:flex sm:justify-center">
+            <div class="bg-white rounded-2xl w-[335px] h-[170px] p-5 py-5 ">
+             <div class="contents">
+                 <p class="text-xs pb-4 ">"Thanks to [Your Program Name], I've transformed my life. I lost 30 pounds, gained energy, and improved my overall well being. I can't recommend this program enough!"</p>
+                 <div class="flex">
+                     <img src="/img/Hussain.png" alt="" class="mb-10">
+                     <div>
+                         <p class="text-[11px] font-medium">Hussain Ahmed</p>
+                         <p class="text-[10px] text-gray1">Physician developer</p>
+                     </div>
+                 </div>
+             </div>
+            </div>
+          </div>
+          <div class="swiper-slide mb-5 sm:flex sm:justify-center">
+            <div class="bg-white rounded-2xl w-[335px] h-[170px] p-5 py-5 ">
+             <div class="contents">
+                 <p class="text-xs pb-4 ">"Thanks to [Your Program Name], I've transformed my life. I lost 30 pounds, gained energy, and improved my overall well being. I can't recommend this program enough!"</p>
+                 <div class="flex">
+                     <img src="/img/Hussain.png" alt="" class="mb-10">
+                     <div>
+                         <p class="text-[11px] font-medium">Hussain Ahmed</p>
+                         <p class="text-[10px] text-gray1">Physician developer</p>
+                     </div>
+                 </div>
+             </div>
+            </div>
+          </div>
+       </div>
+       
+       <div class="swiper-pagination"></div>
+       </div>
+       </div>
+       
+   </section>
+
+    <section style="background-image: url('img/you_can.png');" class="bg-no-repeat bg-cover bg-center w-full h-[364] ">
+       
+           <!--HTML CODE-->
+           <div class="container mx-auto w-11/12 sm:w-5/6 py-5">
+            <div class="w-full relative">
+                <div class="swiper multiple-slide-carousel swiper-container relative">
+                 <div class="swiper-wrapper mb-16">
+                    <div class="swiper-slide flex justify-center mt-28">
+                        <div class="bg-white sm:w-[605px] sm:h-[385px] w-[335px] h-[212px] flex justify-center items-center p-3">
+                           <div class="">
+                               <p class="sm:text-[40px]  font-medium text-[22px] sm:font-semibold sm:my-5 sm:leading-[50px]">Weight Loss and <br> Maintenance</p>
+                               <p class="text-xs sm:text-[18px] text-gray1 leading-5">Physical activity plays a vital and essential role in maintaining. Our curriculum is based in cutting edge psychology, brain science, nutrition, intuitive.</p>
+                               <div class="sm:mt-8 mt-2 mb-6">
+                                   <button class="bg-orange1 rounded-lg px-8 py-4 sm:text-xl text-white sm:font-medium">
+                                       <a href="#">Get Started</a>
+                                   </button>
+                               </div>
+                           </div> 
+                        </div>
+                      </div>
+                   <div class="swiper-slide flex justify-center mt-28">
+                    <div class="bg-white sm:w-[605px] sm:h-[385px] w-[335px] h-[212px] flex justify-center items-center p-3">
+                       <div class="">
+                           <p class="sm:text-[40px]  font-medium text-[22px] sm:font-semibold sm:my-5 sm:leading-[50px]">Weight Loss and <br> Maintenance</p>
+                           <p class="text-xs sm:text-[18px] text-gray1 leading-5">Physical activity plays a vital and essential role in maintaining. Our curriculum is based in cutting edge psychology, brain science, nutrition, intuitive.</p>
+                           <div class="sm:mt-8 mt-2 mb-6">
+                               <button class="bg-orange1 rounded-lg px-8 py-4 sm:text-xl text-white sm:font-medium">
+                                   <a href="#">Get Started</a>
+                               </button>
+                           </div>
+                       </div> 
+                    </div>
+                  </div>
+                 </div>
+                 <div class="absolute flex justify-center items-center sm:left-3/4 m-auto left-0 right-0 w-fit bottom-16 sm:bottom-[320px]">
+                    <button class="swiper-button-next"  type="button" data-carousel-next>
+                        <span ><i class="fa-solid fa-chevron-left sm:mr-[1535px]"></i>
+                        </span>
+                      </button>            
+                    <button  class="swiper-button-prev" type="button" data-carousel-prev>
+                        <span ><i class="fa-solid fa-chevron-right"></i>
+                        </span>
+                      </button>
+                      
+                 </div>
+                 <!-- <div class="absolute flex justify-center items-center m-auto left-0 right-0 w-fit bottom-12">
+                   <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full  hover:bg-indigo-600 !-translate-x-16" data-carousel-prev>
+                     <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                       <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                   </button>
+                   <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-indigo-600 !translate-x-16" data-carousel-next>
+                     <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                       <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                   </button>
+                 </div> -->
+                </div>
+           </div>
+      
+        
+    </section>
+
+    <section>
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-10 mb-10 ">
+            <div class="text-center">
+                <div class="flex justify-center mb-5">
+                    <img src="/img/Icon_big.png" alt="" >
+                </div>
+                <p class="text-xs sm:text-[22px] sm:leading-8 font-medium sm:mt-5">"I was skeptical about weight management programs, but I was overweight and needed a change. I felt lost and unhealthy." I was skeptical about weight management programs, but I was overweight and needed a change. I felt lost and unhealthy."</p>
+                <p class="text-xs sm:text-[18px] text-gray1 my-3 sm:my-5 sm:mt-8">Manhattan, New York, NY</p>
+                <p class="text-[14px] sm:text-[18px] font-medium ">Michelle G.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-12">
+                <div class="sm:hidden block">
+                    <img src="/img/Why_people.png" alt="" class="w-full h-auto">
+                </div>
+                <div class="sm:flex">
+                <div class="">
+                    <p class="text-3xl sm:text-6xl font-semibold sm:my-10 my-5 leading-[50px]">Why people need a <br class="sm:hidden"> Health Adviser?</p>
+                    <p class="text-xs sm:text-[18px] text-gray1 leading-5 sm:leading-7">Physical activity plays a vital and essential role in maintaining. Our curriculum is based in cutting edge psychology, brain science, nutrition, intuitive.</p>
+                    <div class="sm:mt-8 mt-6 mb-6">
+                        <button class="bg-orange1 rounded-lg px-8 py-4 sm:text-xl text-white sm:font-medium">
+                            <a href="#">Get Started</a>
+                        </button>
+                    </div>
+                </div>
+            <div></div>
+                    <img src="/img/Why_people.png" alt="" class="hidden sm:block w-full h-auto sm:w-[505px] sm:h-[486px]">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+       
+        <div>
+            <p class="text-3xl font-semibold text-center mb-5 sm:text-6xl">Testimonials</p>
+        </div>
+        <!--HTML CODE-->
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-5">
+         <div class="w-full relative">
+             <div class="swiper multiple-slide-carousel swiper-container relative">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide flex justify-center">
+                    <div class="bg-orange1 rounded-2xl w-[335px] h-[170px] p-5 py-5">
+                        <div class="contents">
+                            <p class="text-[18px] font-medium pb-3 text-white ">Fantastic Service</p>
+                            <div class="flex">
+                                <img src="/img/4star.png" alt="">
+                                <div>
+                                    <p class="text-xs text-white mt-[1px] ml-2">4.9/5.0 Reviews</p>
+                                </div>
+                            </div>
+                            <p class="text-xs text-white mt-4">l am a 49 year old woman who was treated this past year for Celiac- Sprue Disease. When I was looking for a registered...</p>
+                        </div>
+                       </div>
+                </div>
+                <div class="swiper-slide flex justify-center">
+                    <div class="bg-orange1 rounded-2xl w-[335px] h-[170px] p-5 py-5">
+                        <div class="contents">
+                            <p class="text-[18px] font-medium pb-3 text-white ">Fantastic Service</p>
+                            <div class="flex">
+                                <img src="/img/4star.png" alt="">
+                                <div>
+                                    <p class="text-xs text-white mt-[1px] ml-2">4.9/5.0 Reviews</p>
+                                </div>
+                            </div>
+                            <p class="text-xs text-white mt-4">l am a 49 year old woman who was treated this past year for Celiac- Sprue Disease. When I was looking for a registered...</p>
+                        </div>
+                       </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-center items-center m-auto left-0 right-0 w-fit bottom-4">
+                 <button class="swiper-button-next"  type="button" data-carousel-next>
+                     <span><i class="fa-solid fa-angle-left"></i>
+                     </span>
+                   </button>            
+                 <button  class="swiper-button-prev" type="button" data-carousel-prev>
+                     <span><i class="fa-solid fa-angle-right"></i>
+                     </span>
+                   </button>
+                   
+              </div>
+             </div>
+        </div>
+   
+     
+ </section>
+
+<footer>
+    <section class="bg-[#01393F]">
+        <div class="container mx-auto w-10/12 sm:w-5/6 py-12">
+            <div class="text-center">
+                <p class="text-[16px] font-medium text-white">Newsletter</p>
+                <p class="text-3xl sm:text-6xl sm:font-semibold sm:leading-[80px] text-white font-medium my-5 sm:my-3 sm:mb-10">Subscribe newsletter and <br class="sm:block hidden"> get -20% off</p>
+                <p class="text-xs sm:text-xl text-white sm:mb-14">Globally, adolescents―particularly girls―are greatly affected by malnutrition, partly due to their specific biological needs.</p>
+            </div>
+    
+            <div class="flex justify-center">
+                <form class="w-[300px] h-[50px] sm:w-[588px] sm:h-[58px] mt-5">
+                  <div class="flex">
+                    <div class="relative w-full">
+                <input type="search" class="block sm:p-4 sm:border-2 p-3 w-full z-20 text-sm text-gray-900 bg-white rounded-full  border-1 border border-orange1 " placeholder="Enter email address..." required />
+                <button type="submit" class="absolute top-0 end-0 h-full py-3 px-6 sm:px-14 sm:font-semibold sm:text-[18px] text-sm text-white bg-orange1 rounded-full   hover:bg-orange-600">
+                    <p>Subscribe</p>
+                </button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+     </section>
+    
+     <section class="bg-[#01393F]">
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-12">
+            <div>
+                
+                
+                <div class="sm:grid grid-cols-11 sm:mb-10 ">
+                    <div class="sm:col-span-4 sm:mr-10">
+                        <div class="flex">
+                            <img src="/img/logo_m.png" alt="">
+                            <p class="text-2xl text-white font-bold mt-2 ml-2">Nutxer</p>
+                        </div>
+                        <p class="text-[16px] text-white my-5">Filter out the noise and nurture your inbox with health and wellness advice that’s inclusive and rooted in medical expertise.</p>
+                        <div class="hidden sm:block">
+                            <div class="flex my-5">
+                                <i class="fa-brands fa-square-facebook text-white text-xl"></i>
+                                <i class="fa-brands fa-twitter text-white text-xl mx-5"></i>
+                                <i class="fa-brands fa-linkedin-in text-white text-xl"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="sm:col-span-2 sm:ml-10">
+                        <p class="text-[18px] text-white font-bold my-5">Account</p>
+                        <p class="text-[16px] text-white mt-2">Product</p>
+                        <p class="text-[16px] text-white mt-2">Fearures</p>
+                        <p class="text-[16px] text-white mt-2">Pricing</p>
+                        <p class="text-[16px] text-white mt-2">Case Studies</p>
+                        <p class="text-[16px] text-white mt-2">Case Studies</p>
+                    </div>
+                    <div class="sm:col-span-2 ">
+                        <p class="text-[18px] text-white font-bold my-5">Services</p>
+                        <p class="text-[16px] text-white mt-2">Food Freedom</p>
+                        <p class="text-[16px] text-white mt-2">Healthy Eating</p>
+                        <p class="text-[16px] text-white mt-2">Healthy Eating</p>
+                    </div>
+                    <div class="sm:col-span-3 ">
+                        <p class="text-[18px] text-white font-bold my-5">Contact</p>
+                        <p class="text-[16px] text-white mt-2">(00) 123 456 7890</p>
+                        <p class="text-[16px] text-white mt-2">user@domainname.com</p>
+                        <p class="text-[16px] text-white mt-2">Mon - Fri: 09.00am - 06.00pm</p>
+                    </div>
+                </div>
+               
+                <div class="flex my-5 sm:hidden">
+                    <i class="fa-brands fa-square-facebook text-white text-xl"></i>
+                    <i class="fa-brands fa-twitter text-white text-xl mx-5"></i>
+                    <i class="fa-brands fa-linkedin-in text-white text-xl"></i>
+                </div>
+                <hr class="font-extrabold text-white">
+                <p class="text-[14px] text-white text-center mt-8">© Copyright 2021 by UIHUT. All right reserved.</p>
+            </div>
+        </div>
+     </section>
+</footer>
+
+    <script src="/scripts.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
