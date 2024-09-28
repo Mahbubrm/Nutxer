@@ -9,9 +9,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <link rel="stylesheet" href="/css/plugin.css">
-
+<link rel="stylesheet" href="3d/style.css">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+        black: '#141414',
+        gray1: '#717171',
+        orange1:'#F1713B',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="font-[Poppins]">
     <header class="relative">
@@ -103,7 +116,44 @@
         <div class="container mx-auto w-11/12 sm:w-5/6 py-5">
             <p class="text-[26px] sm:text-6xl font-semibold text-center sm:my-10 sm:leading-tight">See How Nutxer Will Transform The Way You Workout Forever </p>
             <div>
-                <img src="img/See_How.png" alt="" class="ml-8 mt-5 sm:w-full sm:h-full">
+                    <div class="swiper tranding-slider">
+                      <div class="swiper-wrapper">
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                          <div class="tranding-slide-img">
+                            <img src="img/img03.png" alt="Tranding">
+                          </div>
+                        
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                          <div class="tranding-slide-img">
+                            <img src="img/img02.png" alt="Tranding">
+                          </div>
+                          
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                          <div class="tranding-slide-img">
+                            <img src="img/img01.png" alt="Tranding">
+                          </div>
+                         
+                        </div>
+                        <!-- Slide-end -->
+                      </div>
+            
+                      <div class="tranding-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                          <ion-icon name="arrow-back-outline"></ion-icon>
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                          <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
+                       </div>
+            
+                    </div>
             </div>
             <div class="mt-8 pb-3 text-center sm:mt-10">
                 <button class="bg-orange1 rounded-lg px-8 py-3 text-xs sm:text-xl text-white font-medium">
@@ -529,8 +579,8 @@
         </div>
      </section>
 </footer>
-
-    <script src="/scripts.js" type="module"></script>
+  <script src="3d/script.js" type="module" ></script>
+  <script src="/scripts.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

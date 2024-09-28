@@ -1,113 +1,32 @@
-/* CSS Code */
-.swiper-wrapper {
-  width: 100%;
-  height: max-content !important;
-  padding-bottom: 64px !important;
-  -webkit-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
-  position: relative;
-  }
-  .swiper-pagination-bullet {
-   margin-bottom: 5px;
-   background: #F1713B;
- 
-  }
+/* Reviews slider */
 
-  #myDIV {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;}
-
-  .fa-chevron-right{
-    border-radius: 50%;
-    padding: 7px 10px 7px 10px;
-    background-color: #F1713B;
-    color: white;
-   
-  }
-  .fa-chevron-left{
-    border-radius: 50%;
-    padding: 7px 10px 7px 10px;
-    background-color:white ;
-    color:#F1713B ;
-   
-  }
-  .fa-angle-left{
-    border-radius: 50%;
-    padding: 7px 10px 7px 10px;
-    background-color:#F1713B ;
-    color: white;
-   
-  }
-  .fa-angle-right{
-    border-radius: 50%;
-    padding: 7px 10px 7px 10px;
-    background-color:#F1713B;
-    color: white;
-   
-  }
-  #active_nav{
-    font-weight: bolder;
-    font-size:larger;
-  }
-
-  .swiper-button-prev::after{
-    display: none;
-  }
-  .swiper-button-next::after{
-    display: none;
-  }
-  .fa-plus{
-    color: white;
-  }
- 
-
-  /* blog carousel  */
-/* CSS Code */
-.swiper-wrapper2 {
-  width: 100%;
-  height: max-content !important;
-  padding-bottom: 64px !important;
-  -webkit-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
-  position: relative;
-  }
-  .swiper-pagination-bullet {
-  background: #4F46E5;
-  }
-  .swiper-pagination-bullet-active {
-  background: #4F46E5 !important;
-  }
-/* 
-.swiper {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-   
- 
-  }
-  .swiper-slide {
-    background: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-  }
-  .swiper-wrapper {
-    width: 335px;
-    height: 170px !important;
-    margin-bottom: 60px;
-    -webkit-transition-timing-function: linear !important;
-    transition-timing-function: linear !important;
-    position: relative;
+#Reviews {
+      position: relative;
     }
-    .swiper-pagination-bullet {
 
-    margin-top: 20px;
-    background: #4F46E5;
+    .swiper {
+      width: 100%;
+      height: 100%;
     }
-    .swiper-pagination-bullet-active {
-    background: #4F46E5 !important;
-    } */
+      .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-pagination-bullet{
+        color: orange;
+        border: 5px solid orange;
+        background-color: orange;
+        width: 10px;
+        height: 10px;
+        opacity:unset;
+    }
+    .swiper-pagination-bullet .swiper-pagination-bullet-active{
+      background-color: orangered;
+    }
+    .swiper-wrapper{
+      height: 450px;
+      /* margin-bottom: 20px; */
+    }
+

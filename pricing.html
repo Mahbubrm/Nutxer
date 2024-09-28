@@ -9,10 +9,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <link rel="stylesheet" href="/css/plugin.css">
-    
-
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+        black: '#141414',
+        gray1: '#717171',
+        orange1:'#F1713B',
+          }
+        }
+      }
+    }
+  </script> 
 </head>
 <body class="font-[Poppins]">
     <header class="relative">
@@ -186,57 +197,93 @@
 
     <!-- See Our 180+ Amazing Reviews -->
     <section>
-          <div>
-          <p class="text-[22px] sm:text-3xl font-semibold text-center">See Our 180+ Amazing Reviews</p>
-          <div class="container mx-auto w-11/12 sm:w-5/6 py-5">
-           <div class="sm:grid sm:grid-cols-3">
-            <div class="sm:col-span-1 sm:mr-3">
-                <div class="mt-10 p-5 bg-white border shadow sm:w-[330px]">
-                    <div class="flex my-5">
-                        <img src="img/Rabada.png" alt="" class="sm:w-12 sm:h-12">
-                        <div class="ml-3 mr-10 sm:mr-4">
-                            <p class="text-[16px] font-medium sm:text-[18px] sm:mt-3">Rabada</p>
-                        </div>
-                       <img src="img/5_Star.png" alt="" class="mt-3 h-5 sm:h-4 sm:mt-4">
-                    </div>
-                    <p class="text-[16px] leading-7 sm:text-[16px]">"I've been on a lifelong quest for fitness and strength, but it wasn't until I joined Nutxer that I truly saw remarkable results. Nutxer that I truly saw remarkable results. </p>
-                   
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-5">
+          <div id="Reviews">
+              <div class="swiper Reviews ">
+                  <p class="text-[22px] sm:text-3xl font-semibold text-center">See Our 180+ Amazing Reviews</p>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                      <div class="mt-10 p-5 bg-white border shadow sm:w-[330px]">
+                          <div class="flex my-5">
+                              <img src="img/Rabada.png" alt="" class="sm:w-12 sm:h-12">
+                              <div class="ml-3 mr-10 sm:mr-4">
+                                  <p class="text-[16px] font-medium sm:text-[18px] sm:mt-3">Rabada</p>
+                              </div>
+                             <img src="img/5_Star.png" alt="" class="mt-3 h-5 sm:h-4 sm:mt-4">
+                          </div>
+                          <p class="text-[16px] leading-7 sm:text-[16px]">"I've been on a lifelong quest for fitness and strength, but it wasn't until I joined Nutxer that I truly saw remarkable results. Nutxer that I truly saw remarkable results. </p>
+                         
+                      </div>
+                  </div>
+                    <div class="swiper-slide ">
+                      <div class="mt-10 p-5 bg-white border shadow sm:w-[330px]">
+                          <div class="flex mt-8 mb-5 sm:my-5">
+                              <img src="img/Latif_Khader.png" alt="" class="sm:w-12 sm:h-12">
+                              <div class="ml-3 mr-10 sm:mr-2">
+                                  <p class="text-[16px] font-medium sm:text-[18px] mt-3">Tamim Iqbal</p>
+                              </div>
+                             <img src="img/5_Star.png" alt="" class="mt-3 h-5 sm:h-4 sm:mt-4">
+                          </div>
+                          <p class="text-[16px] leading-7 sm:text-[16px]">"I've been on a lifelong quest for fitness and strength, but it wasn't until I joined Nutxer that I truly saw remarkable results. Nutxer that I truly saw remarkable results. </p>
+                      </div>
+                  </div>
+                    <div class="swiper-slide ">
+                      <div class="mt-10 p-5 bg-white border shadow sm:w-[330px] ">
+                          <div class="flex mt-8 mb-5 sm:my-5">
+                              <img src="img/Mitchel_Sentara.png" alt="" class="sm:w-12 sm:h-12">
+                              <div class="ml-3 mr-10 sm:mr-3">
+                                  <p class="text-[16px] font-medium sm:text-[18px] mt-3">Rayen Barl</p>
+                              </div>
+                             <img src="img/5_Star.png" alt="" class="mt-3 h-5 sm:h-4 sm:mt-4">
+                          </div>
+                          <p class="text-[16px] leading-7 sm:text-[16px]">"I've been on a lifelong quest for fitness and strength, but it wasn't until I joined Nutxer that I truly saw remarkable results. Nutxer that I truly saw remarkable results. </p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide ">
+                      <div class="mt-10 p-5 bg-white border shadow sm:w-[330px]">
+                          <div class="flex my-5">
+                              <img src="img/Rabada.png" alt="" class="sm:w-12 sm:h-12">
+                              <div class="ml-3 mr-10 sm:mr-4">
+                                  <p class="text-[16px] font-medium sm:text-[18px] sm:mt-3">Rabada</p>
+                              </div>
+                             <img src="img/5_Star.png" alt="" class="mt-3 h-5 sm:h-4 sm:mt-4">
+                          </div>
+                          <p class="text-[16px] leading-7 sm:text-[16px]">"I've been on a lifelong quest for fitness and strength, but it wasn't until I joined Nutxer that I truly saw remarkable results. Nutxer that I truly saw remarkable results. </p>
+                         
+                      </div>
+                  </div>
+                  <div class="swiper-slide ">
+                      <div class="mt-10 p-5 bg-white border shadow sm:w-[330px]">
+                          <div class="flex mt-8 mb-5 sm:my-5">
+                              <img src="img/Latif_Khader.png" alt="" class="sm:w-12 sm:h-12">
+                              <div class="ml-3 mr-10 sm:mr-2">
+                                  <p class="text-[16px] font-medium sm:text-[18px] mt-3">Tamim Iqbal</p>
+                              </div>
+                             <img src="img/5_Star.png" alt="" class="mt-3 h-5 sm:h-4 sm:mt-4">
+                          </div>
+                          <p class="text-[16px] leading-7 sm:text-[16px]">"I've been on a lifelong quest for fitness and strength, but it wasn't until I joined Nutxer that I truly saw remarkable results. Nutxer that I truly saw remarkable results. </p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide ">
+                      <div class="mt-10 p-5 bg-white border shadow sm:w-[330px] ">
+                          <div class="flex mt-8 mb-5 sm:my-5">
+                              <img src="img/Mitchel_Sentara.png" alt="" class="sm:w-12 sm:h-12">
+                              <div class="ml-3 mr-10 sm:mr-3">
+                                  <p class="text-[16px] font-medium sm:text-[18px] mt-3">Rayen Barl</p>
+                              </div>
+                             <img src="img/5_Star.png" alt="" class="mt-3 h-5 sm:h-4 sm:mt-4">
+                          </div>
+                          <p class="text-[16px] leading-7 sm:text-[16px]">"I've been on a lifelong quest for fitness and strength, but it wasn't until I joined Nutxer that I truly saw remarkable results. Nutxer that I truly saw remarkable results. </p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="swiper-pagination">
+                      <img src="img/Dot-pagination.png" alt="">
+                  </div>
                 </div>
-            </div>
-    
-            <div class="sm:col-span-1 sm:mr-3">
-                <div class="mt-10 p-5 bg-white border shadow sm:w-[330px]">
-                    <div class="flex mt-8 mb-5 sm:my-5">
-                        <img src="img/Latif_Khader.png" alt="" class="sm:w-12 sm:h-12">
-                        <div class="ml-3 mr-10 sm:mr-2">
-                            <p class="text-[16px] font-medium sm:text-[18px] mt-3">Tamim Iqbal</p>
-                        </div>
-                       <img src="img/5_Star.png" alt="" class="mt-3 h-5 sm:h-4 sm:mt-4">
-                    </div>
-                    <p class="text-[16px] leading-7 sm:text-[16px]">"I've been on a lifelong quest for fitness and strength, but it wasn't until I joined Nutxer that I truly saw remarkable results. Nutxer that I truly saw remarkable results. </p>
-                </div>
-            </div>
-    
-            <div class="sm:col-span-1 sm:mr-3">
-                <div class="mt-10 p-5 bg-white border shadow sm:w-[330px] ">
-                    <div class="flex mt-8 mb-5 sm:my-5">
-                        <img src="img/Mitchel_Sentara.png" alt="" class="sm:w-12 sm:h-12">
-                        <div class="ml-3 mr-10 sm:mr-3">
-                            <p class="text-[16px] font-medium sm:text-[18px] mt-3">Rayen Barl</p>
-                        </div>
-                       <img src="img/5_Star.png" alt="" class="mt-3 h-5 sm:h-4 sm:mt-4">
-                    </div>
-                    <p class="text-[16px] leading-7 sm:text-[16px]">"I've been on a lifelong quest for fitness and strength, but it wasn't until I joined Nutxer that I truly saw remarkable results. Nutxer that I truly saw remarkable results. </p>
-                </div>
-            </div>           
-           </div>
-          
-        </div>
-        <div class=" bg-gray-50 pl-36 py-10 sm:ml-96">
-                <img src="img/Dot.png" alt="" >
-          </div>
-        </div>
-    </section>
+          </div>          
+      </div>
+  </section>
 
     <!-- Trusted Company -->
     <section class="bg-[#01393F]">
