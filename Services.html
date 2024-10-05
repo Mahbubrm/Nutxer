@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutxer</title>
+    <link rel="stylesheet" href="/css/plugin.css">
+    <link rel="stylesheet" href="3d/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body class="font-[Poppins]">
+    <header class="relative">
+        <div class="container mt-2 mx-auto w-11/12 sm:w-5/6 sm:mt-5 sm:mb-7 flex justify-between">
+            <div class="mt-4">
+                <a class="flex items-center" href="/"><img src="img/logo.png" alt=""><span class="font-bold text-2xl ml-2">Nutxer</span></a>
+            </div>
+            <div class="">
+                <nav>
+                    <button id="mobile_icon" class="text-black flex text-end text-2xl sm:hidden mt-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>                                                  
+                    </button>
+                    <ul id="main_manu" class="hidden space-x-6 mt-8 absolute sm:relative w-full sm:top-0 sm:justify-evenly sm:flex text-center left-0">
+                        <li>
+                            <a href="/" class="font-semibold text-base">Home</a>
+                        </li>
+                        <li>
+                            <a href="/services" class=" font-semibold text-base" id="active_nav">Services</a>
+                        </li>
+                        <li>
+                            <a href="/about" class=" font-semibold text-base">About</a>
+                        </li>
+                        <li>
+                            <a href="/pricing" class=" font-semibold text-base" >Pricing</a>
+                        </li>
+                        <li>
+                            <a href="/blog" class=" font-semibold text-base">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/" class="font-semibold text-base">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+ 
+            <div class="mt-2 hidden sm:block">
+                <button class="bg-orange1 rounded-lg sm:px-[52px] sm:py-5 sm:text-xl text-white sm:font-medium">
+                    <a href="#">Sign Up</a>
+                </button>
+                <div class="border-2 border-spacing-2 border-black w-[182px] h-[68px] rounded-lg absolute top-0 right-[110px] hover:animate-bounce transition-transform "></div>
+            </div> 
+        </div>       
+    </header>
+
+    <!-- Change Your Eating -->
+    <section>
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-12 sm:grid sm:grid-cols-2 relative">
+           <div class="sm:col-span-1">
+            <div class="">
+                <!-- <div class="sm:col-span-1">
+                    <img src="/img/weight_loss.png" alt="">
+                </div> -->
+                <div class="sm:col-span-1">
+                    <p class="text-3xl sm:text-6xl font-semibold my-3 leading-[45px] sm:leading-[70px]">Discover Inner Peace Through Mindfulness</p>
+                    <p class="text-xs sm:text-xl text-gray1 leading-5">Unlock the Power of Presence, Reduce Stress, and Find Clarity in Your Life.</p>
+                    <div class="mt-8 mb-6 ml-3 sm:mb-10">
+                        <button class="bg-orange1 rounded-lg sm:px-[40px] sm:py-5 px-8 py-3 text-xs sm:text-xl text-white sm:font-medium">
+                            <a href="#">Get Started</a>
+                        </button>
+                        <div class="border-2 border-spacing-2 border-black w-[135px] h-[42px]  sm:w-[197px] sm:h-[68px] rounded-lg absolute top-[226px] left-[4px] sm:top-[360px] sm:left-[1px] hover:animate-bounce transition-transform "></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 sm:flex ">
+                <div class="col-span-1">
+                    <p class="text-3xl font-semibold">25+</p>
+                    <p class="text-[18px] text-gray1 mt-2">The years of our experience</p>
+                </div>
+                <div class="col-span-1 sm:mx-10">
+                    <p class="text-3xl font-semibold">900+</p>
+                    <p class="text-[18px] text-gray1 mt-2">Patients received help this year</p>
+                </div>
+    
+                <div class="mt-5 sm:mt-0">
+                    <p class="text-3xl font-semibold">99%</p>
+                    <p class="text-[18px] text-gray1 mt-2">Client improved their condition</p>
+                </div>
+            </div>
+           </div>
+
+            <div class="relative sm:col-span-1 sm:ml-10">
+                <img src="img/Discover_01.png" alt="" class=" mt-10 sm:mt-5 w-full">
+                <a href=""><img src="img/Play_02.png" alt="" class="absolute left-44 top-48 sm:left-48 sm:top-56 "></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section>
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-12">
+            <div class="text-center">
+                <p class="text-3xl sm:text-6xl font-semibold">Our Services</p>
+                <p class="test-xs sm:text-xl text-gray1 py-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div class="sm:flex ">
+                <div class="mr-5 relative">
+                    <div>
+                        <img src="img/Nutrition_Strategies.png" alt="" class="w-full py-5">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xl sm:text-2xl font-medium mb-3">Nutrition Strategies</p>
+                        <p class="text-[15x] text-gray1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <div class="mt-8 mb-6 ml-3 sm:mb-10">
+                            <button class="bg-orange1 rounded-lg sm:px-[40px] sm:py-5 px-8 py-3 text-xs sm:text-xl text-white sm:font-medium">
+                                <a href="#">Get Started</a>
+                            </button>
+                            <div class="border-2 border-spacing-2 border-black w-[135px] h-[42px]  sm:w-[197px] sm:h-[68px] rounded-lg absolute top-[487px] left-[123px] sm:top-[468px] sm:left-[62px] hover:animate-bounce transition-transform "></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <div>
+                        <img src="img/Workout_Routines.png" alt="" class="w-full py-5">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xl sm:text-2xl font-medium mb-3">Workout Routines</p>
+                        <p class="text-[15x] text-gray1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <div class="mt-8 mb-6 ml-3 sm:mb-10">
+                            <button class="bg-orange1 rounded-lg sm:px-[40px] sm:py-5 px-8 py-3 text-xs sm:text-xl text-white sm:font-medium">
+                                <a href="#">Get Started</a>
+                            </button>
+                            <div class="border-2 border-spacing-2 border-black w-[135px] h-[42px]  sm:w-[197px] sm:h-[68px] rounded-lg absolute top-[502px] left-[133px] sm:top-[468px] sm:left-[62px] hover:animate-bounce transition-transform "></div>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="ml-5 relative">
+                    <div>
+                        <img src="img/Support_Motivation.png" alt="" class="w-full py-5">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xl sm:text-2xl font-medium mb-3">Support & Motivation</p>
+                        <p class="text-[15x] text-gray1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <div class="mt-8 mb-6 ml-3 sm:mb-10">
+                            <button class="bg-orange1 rounded-lg sm:px-[40px] sm:py-5 px-8 py-3 text-xs sm:text-xl text-white sm:font-medium">
+                                <a href="#">Get Started</a>
+                            </button>
+                            <div class="border-2 border-spacing-2 border-black w-[135px] h-[42px]  sm:w-[197px] sm:h-[68px] rounded-lg absolute top-[487px] left-[123px] sm:top-[468px] sm:left-[62px] hover:animate-bounce transition-transform "></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Our Trusted Clients -->
+    <section class="bg-[#01393F]">
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-5 ">
+            <div class=" my-5 mb-10 text-center ">
+                <p class="text-white text-3xl font-semibold">Our Trusted Clients</p>
+               </div>
+           <div class="sm:flex sm:justify-center">
+                        
+               <div class="flex justify-center mb-8">
+                <div class="grid grid-rows-2 sm:flex">
+                    <div class="row-span-1">
+                        <img src="img/Buildkite_Logo.png" alt="" class="w-28">
+                    </div>
+                    <div class="row-span-1"></div>
+                        <img src="img/Deliveroo_Logo.png" alt="" class="w-24 ml-4 sm:mx-24">
+                    </div>
+                    <div class="grid grid-rows-2 sm:flex">
+                        <div class="row-span-1">
+                            <img src="img/Corning_Logo.png" alt="" class="w-24 ml-1 sm:mt-1">
+                        </div>
+                        <div class="row-span-1">
+                            <img src="img/DocuSing_Logo.png" alt="" class="w-16 ml-5 sm:mx-24">
+                        </div>
+                  </div>
+               </div>
+               <div >
+                <img src="img/verily_Logo.png" alt="" class=" hidden sm:block w-16 ml-5">
+               </div>
+           </div>
+           
+        </div>
+    </section>
+
+    <!-- Mental Health Counselor -->
+     <section>
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-5">
+            <div class="sm:grid sm:grid-cols-2">
+                    <div class="col-span-1 sm:mt-10 sm:mr-5 relative">
+                    <div>
+                        <p class="text-[26px] sm:text-6xl font-semibold">Mental Health Counselor, Psychotherapist</p>
+                        <p class="text-xs sm:text-xl text-gray1 sm:my-8">It is a long established fact that a reader will be distracted by the readable content of a page. Sed ut perspicuity's under Omnis site nates error.</p>
+                    </div>
+                    <div class="grid grid-cols-2">
+                        <div class="col-span-1 my-6">
+                            <div class="flex">
+                                <img src="img/tik_logo.png" alt="" class="w-4 h-4 mr-2">
+                                <p class="text-[12px] sm:text[18px]"> Personal Consultations</p>                        
+                            </div>
+                            <div class="flex my-4">
+                                <img src="img/tik_logo.png" alt="" class="w-4 h-4 mr-2">
+                                <p class="text-[12px] sm:text[18px]"> Group Therapy</p>                        
+                            </div>
+                            <div class="flex">
+                                <img src="img/tik_logo.png" alt="" class="w-4 h-4 mr-2">
+                                <p class="text-[12px] sm:text[18px]"> Online Therapy</p>                        
+                            </div>
+                            
+                        </div>
+                        <div class="col-span-1 my-6">
+                            <div class="flex">
+                                <img src="img/tik_logo.png" alt="" class="w-4 h-4 mr-2">
+                                <p class="text-[12px] sm:text[18px]"> Unique technique</p>                        
+                            </div>
+                            <div class="flex my-4">
+                                <img src="img/tik_logo.png" alt="" class="w-4 h-4 mr-2">
+                                <p class="text-[12px] sm:text[18px]"> Couple Problem</p>                        
+                            </div>
+                            <div class="flex">
+                                <img src="img/tik_logo.png" alt="" class="w-4 h-4 mr-2">
+                                <p class="text-[12px] sm:text[18px]"> Online Therapy</p>                        
+                            </div>
+                            
+                        </div>
+        
+                        </div>
+                        <div class="mt-8 mb-6 ml-3 sm:mb-10">
+                            <button class="bg-orange1 rounded-lg sm:px-[40px] sm:py-5 px-8 py-3 text-xs sm:text-xl text-white sm:font-medium">
+                                <a href="#">Get Started</a>
+                            </button>
+                            <div class="border-2 border-spacing-2 border-black w-[132px] h-[42px]  sm:w-[197px] sm:h-[68px] rounded-lg absolute top-[285px] left-[4px] sm:top-[485px] sm:left-[2px] hover:animate-bounce transition-transform "></div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1">
+                        <div class="relative">
+                        <img src="img/Mental_Health.png" alt="" class=" mt-10 w-full sm:ml-10">
+                        <a href=""><img src="img/Play_03.png" alt="" class="absolute left-36 sm:left-40  right-0 top-44 sm:w-20 "></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </section>
+  
+   <!-- What Patients Say -->
+    <section>
+           <div class=" container mx-auto w-11/12 sm:w-5/6 py-5 ">
+            <p class="text-3xl font-semibold my-5 mb-10 text-center">What Patients Say</p>
+            <div class=" swiper relative ">
+                <div class="swiper-container swiper-one">
+                    <div class="swiper-wrapper  ">
+                       <div class="swiper-slide One-slider">
+                           <div class="bg-white rounded-lg border-[1px] border-orange1 w-[335px] h-[185px] p-3 py-5 ">
+                               <div class="contents">
+                                   <div class="flex">
+                                       <img src="/img/Hussain.png" alt="" class="mb-5">
+                                       <div class="ml-2">
+                                           <p class="text-[11px] font-medium">Hussain Ahmed</p>
+                                           <p class="text-[10px] text-gray1">Physician developer</p>
+                                       </div>
+                                       <img src="/img/4star.png" alt="" class="w-20 h-4 ml-20">
+                                   </div>
+                                   <p class="text-xs pb-4 ">"Thanks to [Your Program Name], I've transformed my life. I lost 30 pounds, gained energy, and improved my overall well being. I can't recommend this program enough!"</p>
+                               </div>
+                           </div>
+                               
+                       </div>
+                       <div class="swiper-slide One-slider">
+                           <div class="bg-white rounded-lg border-[1px] border-orange1 w-[335px] h-[185px] p-3 py-5 ">
+                               <div class="contents">
+                                   <div class="flex">
+                                       <img src="/img/Hussain.png" alt="" class="mb-5">
+                                       <div class="ml-2">
+                                           <p class="text-[11px] font-medium">Hussain Ahmed</p>
+                                           <p class="text-[10px] text-gray1">Physician developer</p>
+                                       </div>
+                                       <img src="/img/4star.png" alt="" class="w-20 h-4 ml-20">
+                                   </div>
+                                   <p class="text-xs pb-4 ">"Thanks to [Your Program Name], I've transformed my life. I lost 30 pounds, gained energy, and improved my overall well being. I can't recommend this program enough!"</p>
+                               </div>
+                           </div>
+                               
+                         </div>
+                         <div class="swiper-slide One-slider">
+                           <div class="bg-white rounded-lg border-[1px] border-orange1 w-[335px] h-[185px] p-3 py-5 ">
+                               <div class="contents">
+                                   <div class="flex">
+                                       <img src="/img/Hussain.png" alt="" class="mb-5">
+                                       <div class="ml-2">
+                                           <p class="text-[11px] font-medium">Hussain Ahmed</p>
+                                           <p class="text-[10px] text-gray1">Physician developer</p>
+                                       </div>
+                                       <img src="/img/4star.png" alt="" class="w-20 h-4 ml-20">
+                                   </div>
+                                   <p class="text-xs pb-4 ">"Thanks to [Your Program Name], I've transformed my life. I lost 30 pounds, gained energy, and improved my overall well being. I can't recommend this program enough!"</p>
+                               </div>
+                           </div>
+                               
+                       </div>
+                       <div class="swiper-slide One-slider">
+                           <div class="bg-white rounded-lg border-[1px] border-orange1 w-[335px] h-[185px] p-3 py-5 ">
+                               <div class="contents">
+                                   <div class="flex">
+                                       <img src="/img/Hussain.png" alt="" class="mb-5">
+                                       <div class="ml-2">
+                                           <p class="text-[11px] font-medium">Hussain Ahmed</p>
+                                           <p class="text-[10px] text-gray1">Physician developer</p>
+                                       </div>
+                                       <img src="/img/4star.png" alt="" class="w-20 h-4 ml-20">
+                                   </div>
+                                   <p class="text-xs pb-4 ">"Thanks to [Your Program Name], I've transformed my life. I lost 30 pounds, gained energy, and improved my overall well being. I can't recommend this program enough!"</p>
+                               </div>
+                           </div>
+                               
+                         </div>
+                         </div>
+                         <!-- Add Arrows -->
+                           <button class="swiper-button-next">
+                               <span ><i class="fa-solid fa-angle-right"></i>
+                               </span>
+                             </button>            
+                           <button  class="swiper-button-prev sm:ml-14 ml-5">
+                               <span ><i class="fa-solid fa-angle-left"></i>
+                               </span>
+                             </button>
+                    </div>
+            </div>
+         </div>    
+    </section>
+
+
+    <!-- Your Peace Starts Here. -->
+    <div class="sm:block hidden">
+        <div class="relative">
+            <img src="img/Your_Peace.png" alt="" class=" mt-10 w-full sm:h-[510px]">
+            <a href=""><img src="img/Play_03.png" alt="" class="absolute left-44 right-0 top-20 sm:ml-[400px] sm:top-52"></a>
+        </div>  
+    </div>
+    <section>
+        <div class="container mx-auto w-11/12 sm:w-5/6">
+            <div class="sm:grid sm:grid-cols-2">
+                <div class="sm:col-span-1">
+                    
+                    <img src="img/Your_peace_01.png" alt="" class="w-full my-10 sm:mt-16 hidden sm:block">
+
+
+                    <div class="relative sm:hidden block">
+                        <img src="img/Your_Peace.png" alt="" class=" mt-10 w-full">
+                        <a href=""><img src="img/Play_04.png" alt="" class="absolute left-44 right-0 top-20 "></a>
+                    </div>                
+                </div>
+                <div class="sm:col-span-1 sm:ml-10 sm:mt-16 relative">
+                    <p class="text-3xl sm:text-6xl font-semibold my-3 leading-[45px]">Your Peace Starts <br> Here.</p>
+                    <p class="text-xs sm:text-xl text-gray1 leading-5">Physical activity plays a vital and essential role in <br> maintaining. Our curriculum is based in cutting edge <br> psychology, brain science, nutrition, intuitive.</p>
+                    <div class="mt-8 mb-6 ml-3 sm:mb-10">
+                        <button class="bg-orange1 rounded-lg sm:px-[40px] sm:py-5 px-8 py-3 text-xs sm:text-xl text-white sm:font-medium">
+                            <a href="#">Get Started</a>
+                        </button>
+                        <div class="border-2 border-spacing-2 border-black w-[135px] h-[42px]  sm:w-[197px] sm:h-[68px] rounded-lg absolute top-[186px] left-[4px] sm:top-[367px] sm:left-[2px] hover:animate-bounce transition-transform "></div>
+                    </div>
+                </div>
+                
+            </div>
+           <img src="img/Your_place_02.png" alt="" class="w-full my-10 sm:hidden block">
+        </div>
+    </section>
+
+    <!-- What Other Pet -->
+<section class="bg-[#01393F]">
+    <div class="container mx-auto w-11/12 sm:w-5/6 mt-10 relative">
+        <p class="text-3xl text-white font-semibold text-center py-12 ">What Other Pet <br> Owners Are Saying</p>
+      <div class="sm:flex">
+        <div class="bg-white w-full h-[260px] text-center sm:mt-12 sm:mr-5">
+            <img src="img/Hussain_Ahmed.png" alt="" class="absolute top-36 right-[168px] bottom-0 sm:top-44 sm:right-[825px]">
+            <img src="img/5_Star.png" alt="" class="ml-36 sm:ml-[105px] pt-12 my-3">
+            <p class="text-[16px] font-medium mb-5">Hussain Ahmed</p>
+            <p class="text-[14px] text-gray1 ">"I was skeptical about mindfulness at first, <br> but the courses here exceeded my <br> expectations. I'm now a believer and <br> advocate.</p>
+        </div>
+        <div class="bg-white w-full h-[260px] text-center mt-12 ">
+            <img src="img/Tajul_Islam.png" alt="" class="absolute top-[455px] right-[168px] bottom-0 sm:top-44 sm:right-[480px]">
+            <img src="img/5_Star.png" alt="" class="ml-36 sm:ml-[105px] pt-12 my-3">
+            <p class="text-[16px] font-medium mb-5">Hussain Ahmed</p>
+            <p class="text-[14px] text-gray1 ">"I was skeptical about mindfulness at first, <br> but the courses here exceeded my <br> expectations. I'm now a believer and <br> advocate.</p>
+        </div>
+        <div class="bg-white w-full h-[260px] text-center mt-12 sm:ml-5">
+            <img src="img/Nabil_Ahmed.png" alt="" class="absolute top-[765px] right-[168px] bottom-0 sm:top-44 sm:right-[132px]">
+            <img src="img/5_Star.png" alt="" class="ml-36 sm:ml-[105px] pt-12 my-3">
+            <p class="text-[16px] font-medium mb-5">Hussain Ahmed</p>
+            <p class="text-[14px] text-gray1 ">"I was skeptical about mindfulness at first, <br> but the courses here exceeded my <br> expectations. I'm now a believer and <br> advocate.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 pb-10 sm:mt-20 sm:pb-20 text-center">
+        <button class="bg-orange1 rounded-lg sm:px-[48px] sm:py-5 px-8 py-3 text-xs sm:text-xl text-white sm:font-medium">
+            <a href="#">Get Started</a>
+        </button>
+        <div class="border-2 border-spacing-2 border-white w-[135px] h-[42px]  sm:w-[212px] sm:h-[70px] rounded-lg absolute top-[1088px] left-[126px] sm:top-[545px] sm:left-[395px] hover:animate-bounce transition-transform "></div>
+    </div>
+
+    </div>
+</section>
+
+<!-- Frequently Asked Questions -->
+   
+<section>
+    <div class="container mx-auto w-11/12 sm:w-5/6 py-5">
+        <p class="text-3xl sm:text-6xl font-semibold text-center sm:py-14 sm:pt-16">Frequently Asked Questions</p>
+        <div class="bg-orange1 text-white flex p-7 mt-5 sm:p-5">
+            <P class="text-[14px] sm:text-2xl">What is mindfulness, and how does it work?</P>
+            <button id="btn_para"><i class="fa-solid fa-plus mt-2 ml-7 sm:ml-80 "></i></button>                                                     
+        </div>
+        <p id="para" class="text-xs sm:text-xl text-gray1 p-3 py-8">Mindfulness is a practice of being fully present in the moment without judgment. It involves paying attention to your thoughts, feelings, and sensations. Check our "What is Mindfulness?" section for more information.</p>
+        
+        <div class="flex p-3 mb-6">
+            <p class="text-[14px] sm:text-xl font-medium ">
+                How can mindfulness benefit me?
+            </p>
+            <img src="img/plus_BBIcon.png" alt="" class="w-4 h-4 ml-8 mt-1 sm:ml-[510px]">
+        </div>
+
+        <div class="flex p-3">
+            <p class="text-[14px] sm:text-xl font-medium">
+                Do I need prior experience to start <br> practicing mindfulness?
+            </p>
+            <img src="img/plus_BBIcon.png" alt="" class="w-4 h-4 ml-8 mt-1 sm:ml-[510px]">
+        </div>
+
+        <div class="flex p-3 my-6">
+            <p class="text-[14px] sm:text-xl font-medium">
+                How can mindfulness benefit me?
+            </p>
+            <img src="img/plus_BBIcon.png" alt="" class="w-4 h-4 ml-8 mt-1 sm:ml-[510px]">
+        </div>
+
+        <div class="hidden p-3 my-6 sm:block ">
+            <div class="flex">
+                <p class="text-[14px] sm:text-xl font-medium sm:pr-20">
+                    Are there any costs associated with using your website?
+                </p>
+                <img src="img/plus_BBIcon.png" alt="" class="w-4 h-4 ml-8 mt-1 sm:ml-52">
+            </div>
+           
+        </div>
+
+        <div class=" p-3 my-6 hidden sm:block sm:mb-20">
+           <div class="flex">
+            <p class="text-[14px] sm:text-xl font-medium">
+                How can I get in touch with mindfulness instructors or experts for guidance?
+            </p>
+            <img src="img/plus_BBIcon.png" alt="" class="w-4 h-4 ml-8 mt-1 sm:ml-[90px]">
+           </div>
+        </div>
+          
+    </div>
+</section>
+
+
+
+ <!-- Footer section -->
+<footer>    
+     <!-- Filter out the -->
+     <section class="bg-[#01393F]">
+        <div class="container mx-auto w-11/12 sm:w-5/6 py-12">
+            <div>
+                
+                
+                <div class="sm:grid grid-cols-11 sm:mb-10 ">
+                    <div class="sm:col-span-4 sm:mr-10">
+                        <div class="flex">
+                            <img src="/img/logo_m.png" alt="">
+                            <p class="text-2xl text-white font-bold mt-2 ml-2">Nutxer</p>
+                        </div>
+                        <p class="text-[16px] text-white my-5">Filter out the noise and nurture your inbox with health and wellness advice that’s inclusive and rooted in medical expertise.</p>
+                        <div class="hidden sm:block">
+                            <div class="flex my-5">
+                                <i class="fa-brands fa-square-facebook text-white text-xl"></i>
+                                <i class="fa-brands fa-twitter text-white text-xl mx-5"></i>
+                                <i class="fa-brands fa-linkedin-in text-white text-xl"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="sm:col-span-2 sm:ml-10">
+                        <p class="text-[18px] text-white font-bold my-5">Account</p>
+                        <p class="text-[16px] text-white mt-2">Product</p>
+                        <p class="text-[16px] text-white mt-2">Fearures</p>
+                        <p class="text-[16px] text-white mt-2">Pricing</p>
+                        <p class="text-[16px] text-white mt-2">Case Studies</p>
+                        <p class="text-[16px] text-white mt-2">Case Studies</p>
+                    </div>
+                    <div class="sm:col-span-2 ">
+                        <p class="text-[18px] text-white font-bold my-5">Services</p>
+                        <p class="text-[16px] text-white mt-2">Food Freedom</p>
+                        <p class="text-[16px] text-white mt-2">Healthy Eating</p>
+                        <p class="text-[16px] text-white mt-2">Healthy Eating</p>
+                    </div>
+                    <div class="sm:col-span-3 ">
+                        <p class="text-[18px] text-white font-bold my-5">Contact</p>
+                        <p class="text-[16px] text-white mt-2">(00) 123 456 7890</p>
+                        <p class="text-[16px] text-white mt-2">user@domainname.com</p>
+                        <p class="text-[16px] text-white mt-2">Mon - Fri: 09.00am - 06.00pm</p>
+                    </div>
+                </div>
+               
+                <div class="flex my-5 sm:hidden">
+                    <i class="fa-brands fa-square-facebook text-white text-xl"></i>
+                    <i class="fa-brands fa-twitter text-white text-xl mx-5"></i>
+                    <i class="fa-brands fa-linkedin-in text-white text-xl"></i>
+                </div>
+                <hr class="font-extrabold text-white">
+                <p class="text-[14px] text-white text-center mt-8">© Copyright 2021 by UIHUT. All right reserved.</p>
+            </div>
+        </div>
+     </section>
+</footer>
+
+    <script src="/scripts.js" type="module"></script>
+    <script src="3d/script.js" type="module" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
